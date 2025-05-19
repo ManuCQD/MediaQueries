@@ -1,0 +1,80 @@
+body{
+    margin-top: 20px;
+    font-size: 30px;
+}
+
+.bloco1{
+    margin: 10px;
+    background-color: red;
+    width: 400px;
+    height: 300px;
+    position: static;
+}
+
+.bloco1::after{
+    content: ""; 
+    background-color: rgb(95, 11, 11);
+    display: block;
+    width: 400px;
+    height: 300px;
+    position: relative;
+    bottom: 35px;
+    right: 15px;
+    opacity: 40%;
+}
+
+
+
+
+/*teste1*/
+.bloco{
+    width: 60%;
+}
+
+form::before{
+    content: "";
+    display: flex;
+    width: 100%;
+    height: 50px;
+    background-color: rgb(156, 156, 156);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+form{
+    height: 50px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+form > input{
+    background-color: pink;
+    width: 80%;
+    height: 40px;
+}
+
+form::before,
+form > input{
+    border-radius: 40px;
+}
+
+form > input,
+button{
+    border-style: none;
+}
+
+
+button{
+    background-color: transparent;
+}
+
+img{
+    width: 10%;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+}

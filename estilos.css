@@ -1,0 +1,105 @@
+/* @charset "UTF-8"; */
+/*configurações gerais*/
+/* *{
+    margin: 0;
+    padding: 0;
+}
+
+html,body{
+    width: 100vw;
+    height: 100vh;
+    background-color: #233eff;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+h1{
+    color: white;
+    text-shadow: 2px 2px 0px #1526a7;
+    padding: 10px;
+} */
+/* 
+body{
+    min-height: 95vh;
+    border: solid black 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.item{
+    background-color: pink;
+    width: 200px;
+    height: 200px;
+} */
+
+/*containers shirk*/
+
+/* .container-flex{
+    background-color: antiquewhite;
+    width: 50%;
+    height: 200px;
+    display: flex;
+    flex-flow: row ;
+    gap: 10px;
+}
+
+.flex-item{
+    background-color: pink;
+    height: 20px;
+    flex: 0 1 50px;
+} */
+
+.container-flex{
+    width: 40%;
+    background-color: bisque;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.flex-item{
+    background-color: purple;
+    height: 20px; 
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.a{
+    /* flex-grow: 1; */
+    flex-basis: 100px;
+}
+
+.b{
+    /* flex-grow: 5; */
+    flex-basis: 200px;
+}
+
+.c{
+    /* flex: 0; */
+    flex-basis: 40px;
+} 
+
+
+
+/* 
+
+@media only screen and (max-width:250px){
+
+    .container-flex{
+        background-color: antiquewhite;
+        height: 200px;
+        display: flex;
+        flex-flow: row ;
+        gap: 10px;
+    }
+    
+    .flex-item{
+        background-color: pink;
+        height: 20px;
+        flex: 0 1 100px; /*71328
+    }
+} */
