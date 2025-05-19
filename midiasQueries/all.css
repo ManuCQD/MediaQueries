@@ -2,7 +2,8 @@
 
 body{
     background-color: #233eff;
-    height: 100vh;
+    /* height: 100vh; */
+    height: 1600px;
     background-repeat: no-repeat;
     background-position: left bottom;
     background-size: contain;
