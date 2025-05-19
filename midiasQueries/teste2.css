@@ -1,0 +1,55 @@
+@charset "UTF-8";
+/*ideia é só de mobile p/ monitor/
+
+/*retrato*/
+body{
+    background-image: url(../pacote-imagens-cap25/imagens/cev-portrait.jpg);
+}
+
+/*monitor*/
+@media screen and (min-width:730px){
+    /*cresça a partir de 720*/
+    body{
+        background-image: url(../pacote-imagens-cap25/imagens/cev-landscape.jpg);
+    }
+}
+
+/*paisagem*/
+/* @media screen and (min-width:720px) and (orientation:landscape) {
+    /*cresça a partir de 720* -- comentário
+    body{
+        background-image: url(../pacote-imagens-cap25/imagens/cev-landscape.jpg);
+    }
+} */
+
+
+/*
+A sequência da "codificação mobile-firts" consistem nas seguintes etapas:
+Estilo base - mobile (retrato)
+    essa etapa consite em codificar pensando no layout mobile no modo retatro.
+Telas maiores
+    aqui utiliza-se as medias queries para fazer o layout especifico aplicando a lógica 
+    das medias queries(fazer o layout se adaptar a diferentes tipos de telas, nesse caso
+    se adaptar as telas maiores), utiliza as medias queries e mais as propriedades 
+    min-max width/height(para a lógica) 
+    ´´´
+    @media screen and (min-width: ...) { ... }
+    ´´´
+mobile layout para paisagem
+    Neste caso é importante lembrar que essa parte depende do layout:
+    Caso 1 - estrutura diferente da versão de desktop e eventualmente mais
+    elementos no código.
+        Aqui utilizaremos a media feature orientation 
+    Caso 2 - estrutura iguais, o layout para monitores e do modo paisagem tem 
+    o mesmo layout.
+        aqui se utiliza media screen com os medias features
+
+Obs: 
+1 - Media only screen não é mais utilizado, o recomendado é usar media screen nas regras @media e declarar media="screen" ou media="all" no link do html.
+
+2 - Sobre arquivos CSS e Media Types:
+    - É uma boa prática ter um arquivo CSS linkado com **media="all"**. Este arquivo é utilizado para definir propriedades e estilos que serão **igualmente usados** 
+       em **todos** os cenários de mídia/layout (funciona como uma base universal). Ex: box-sizing, reset, fontes padrão, etc.
+    - As Media Queries (@media screen and (...)) são utilizadas em **outros arquivos** (linkados com media="screen") ou mais abaixo no **mesmo arquivo base** para aplicar 
+      estilos **diferentes** ou ajustes específicos para cada condição de tela/orientação (tamanho, orientação, etc.), sobrescrevendo os estilos base quando necessário.
+*/
