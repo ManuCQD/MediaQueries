@@ -6,11 +6,18 @@ body{
     background-image: url(../pacote-imagens-cap25/imagens/cev-portrait.jpg);
 }
 
+p{
+    color: red;
+}
+
 /*monitor*/
 @media screen and (min-width:730px){
     /*cresça a partir de 720*/
     body{
         background-image: url(../pacote-imagens-cap25/imagens/cev-landscape.jpg);
+    }
+    p{
+        color: yellow;
     }
 }
 
